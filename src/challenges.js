@@ -4,8 +4,8 @@ const compareTrue = (number1, number2) => number1 === true && number2 === true;
 function splitSentence(name) { return name.split(' '); }
 console.log(splitSentence('foguete'));
 // Desafio 3 - Crie a função concatName
-const concatName = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']; {
-  console.log(concatName[concatName.length - 1] + `, ` + concatName[0]) }
+const concatName = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo,']; {
+  console.log(concatName[concatName.length - 1], concatName[0]) }
 // Desafio 4 - Crie a função footballPoints
 
 // Desafio 5 - Crie a função highestCount
