@@ -5,15 +5,30 @@ function splitSentence(name) { return name.split(' '); }
 console.log(splitSentence('foguete'));
 // Desafio 3 - Crie a função concatName
 const concatName = (word) => word[word.length -1] + `, ` + word[0];
-console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 // Desafio 4 - Crie a função footballPoints
 let pon = 0;
 
 function footballPoints(wins, ties) {
   pon = ((wins * 3) + ties);
   return pon;
-} console.log(footballPoints(1, 2));
+}
 // Desafio 5 - Crie a função highestCount
+
+function highestCount(highest) {
+  let high = 0;
+  let cont = 0;
+  for (let number of highest) {
+    if (number === high) {
+      high = number;
+      cont += 1;
+    } else if (number > high || number < 0) {
+      high = number;
+      cont = 0;
+      cont += 1;
+    }
+  }
+  return cont;
+}
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
