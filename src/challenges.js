@@ -73,6 +73,83 @@ function fizzBuzz(numbers){
 
 // Desafio 9 - Crie a função encode e a função decode
 
+function encode(string) {
+  let wordFull = [];
+   const word = {
+    'a': 1,
+    'e': 2,
+    'i': 3,
+    'o': 4,
+    'u': 5,
+   };
+   for (let key of string ) {
+    switch (key) {
+    case 'a':
+      wordFull.push(key = word.a);
+      break;
+
+    case 'e':
+      wordFull.push(key = word.e);
+      break;
+
+    case 'i':
+      wordFull.push(key = word.i);
+      break;
+
+    case 'o':
+      wordFull.push(key = word.o);
+      break;
+
+    case 'u':
+      wordFull.push(key = word.u);
+      break;
+
+    default:
+      wordFull.push(key);
+    }
+  }
+
+  return wordFull.join('');
+}
+
+function decode(stringde) {
+  let wordde = [];
+   const wordd = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+   for (let key of stringde ) {
+    switch (key) {
+    case '1':
+      wordde.push(key = wordd['1']);
+      break;
+
+    case '2':
+      wordde.push(key = wordd['2']);
+      break;
+
+    case '3':
+      wordde.push(key = wordd['3']);
+      break;
+
+    case '4':
+      wordde.push(key = wordd['4']);
+      break;
+
+    case '5':
+      wordde.push(key = wordd['5']);
+      break;
+
+    default:
+      wordde.push(key);
+    }
+  }
+
+  return wordde.join('');
+}
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
