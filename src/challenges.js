@@ -31,24 +31,6 @@ function footballPoints(wins, ties) {
       return counter;
     }
 
-
-// function highestCount(highest) {
-//   let high = 0;
-//   let cont = 0;
-//   for (let number of highest) {
-//     if (number === high) {
-//       high = number;
-//       cont += 1;
-//     } else if (number > high || number < 0) {
-//       high = number;
-//       cont = 0;
-//       cont += 1;
-  
-//     }
-//   }
-//   return cont;
-// }
-
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 let calcTriangleArea = (base, height) => (base * height) / 2;
 let calcRectangleArea = (base, height) => (base * height);
