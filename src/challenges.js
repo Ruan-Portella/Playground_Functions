@@ -3,7 +3,7 @@ const compareTrue = (number1, number2) => number1 === true && number2 === true;
 // Desafio 2 - Crie a função splitSentence
 function splitSentence(name) { return name.split(' '); }
 // Desafio 3 - Crie a função concatName
-const concatName = (word) => word[word.length -1] + `, ` + word[0];
+const concatName = (word) => `${word[word.length - 1]}, ${word[0]}`;
 // Desafio 4 - Crie a função footballPoints
 let pon = 0;
 
@@ -13,32 +13,32 @@ function footballPoints(wins, ties) {
 }
 // Desafio 5 - Crie a função highestCount
 
-    function highestCount(highest) {
-      let high = 0;
-      let counter = 0;
+function highestCount(highest) {
+  let high = 0;
+  let counter = 0;
 
-      for (let index = 0; index < highest.length; index += 1) {
-        if (highest[index] === high) {
-          high = highest[index];
-          counter += 1;
-        } else if (highest[index] > high || highest[index] < 0) {
-          high = highest[index];
-          counter = 0;
-          counter += 1;
-        }
-      }
-      return counter;
+  for (let index = 0; index < highest.length; index += 1) {
+    if (highest[index] === high) {
+      high = highest[index];
+      counter += 1;
+    } else if (highest[index] > high || highest[index] < 0) {
+      high = highest[index];
+      counter = 0;
+      counter += 1;
     }
+  }
+  return counter;
+}
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
-let calcTriangleArea = (base, height) => (base * height) / 2;
-let calcRectangleArea = (base, height) => (base * height);
+const calcTriangleArea = (base, height) => (base * height) / 2;
+const calcRectangleArea = (base, height) => (base * height);
 
 function calcAllAreas(base, height, form) {
   if (form === 'triângulo') {
-    return 'O valor da área do triângulo é de: ' + calcTriangleArea(base, height);
+    return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
   } if (form === 'retângulo') {
-    return 'O valor da área do retângulo é de: ' + calcRectangleArea(base, height);
+    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
   }
   return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
 }
@@ -55,55 +55,49 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8 - Crie a função fizzBuzz
 
-function fizzBuzz(numbers) {
-    let string = [];
-    for (let index = 0; index < numbers.length; index += 1){
-      if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
-        string.push('fizzBuzz');
-      } else if (numbers[index] % 5 === 0) {
-        string.push('buzz');
-      } else if (numbers[index] % 3 === 0) {
-        string.push('fizz');
-      } else {
-        string.push('bug!');
-      }
+const fizzBuzz = (numbers) => {
+  let string = [];
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
+      string.push('fizzBuzz');
+    } else if (numbers[index] % 5 === 0) {
+      string.push('buzz');
+    } else if (numbers[index] % 3 === 0) {
+      string.push('fizz');
+    } else {
+      string.push('bug!');
     }
-    return string;
-}
-
+  }
+  return string;
+};
 // Desafio 9 - Crie a função encode e a função decode
 
 function encode(string) {
   let wordFull = [];
-   const word = {
+  const word = {
     'a': 1,
     'e': 2,
     'i': 3,
     'o': 4,
     'u': 5,
-   };
-   for (index = 0; index < string.length; index += 1) {
+  };
+  for (index = 0; index < string.length; index += 1) {
     switch (string[index]) {
     case 'a':
       wordFull.push(string[index] = word.a);
       break;
-
     case 'e':
       wordFull.push(string[index] = word.e);
       break;
-
     case 'i':
       wordFull.push(string[index] = word.i);
       break;
-
     case 'o':
       wordFull.push(string[index] = word.o);
       break;
-
     case 'u':
       wordFull.push(string[index] = word.u);
       break;
-
     default:
       wordFull.push(string[index]);
     }
@@ -114,35 +108,30 @@ function encode(string) {
 
 function decode(stringde) {
   let wordde = [];
-   const wordd = {
+  const wordd = {
     1: 'a',
     2: 'e',
     3: 'i',
     4: 'o',
     5: 'u',
   };
-   for (index = 0; index < stringde.length; index += 1) {
+  for (index = 0; index < stringde.length; index += 1) {
     switch (stringde[index]) {
     case '1':
       wordde.push(stringde[index] = wordd['1']);
       break;
-
     case '2':
       wordde.push(stringde[index] = wordd['2']);
       break;
-
     case '3':
       wordde.push(stringde[index] = wordd['3']);
       break;
-
     case '4':
       wordde.push(stringde[index] = wordd['4']);
       break;
-
     case '5':
       wordde.push(stringde[index] = wordd['5']);
       break;
-
     default:
       wordde.push(stringde[index]);
     }
