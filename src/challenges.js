@@ -82,30 +82,30 @@ function encode(string) {
     'o': 4,
     'u': 5,
    };
-   for (let key of string ) {
-    switch (key) {
+   for (index = 0; index < string.length; index += 1) {
+    switch (string[index]) {
     case 'a':
-      wordFull.push(key = word.a);
+      wordFull.push(string[index] = word.a);
       break;
 
     case 'e':
-      wordFull.push(key = word.e);
+      wordFull.push(string[index] = word.e);
       break;
 
     case 'i':
-      wordFull.push(key = word.i);
+      wordFull.push(string[index] = word.i);
       break;
 
     case 'o':
-      wordFull.push(key = word.o);
+      wordFull.push(string[index] = word.o);
       break;
 
     case 'u':
-      wordFull.push(key = word.u);
+      wordFull.push(string[index] = word.u);
       break;
 
     default:
-      wordFull.push(key);
+      wordFull.push(string[index]);
     }
   }
 
@@ -121,30 +121,30 @@ function decode(stringde) {
     4: 'o',
     5: 'u',
   };
-   for (let key of stringde ) {
-    switch (key) {
+   for (index = 0; index < stringde.length; index += 1) {
+    switch (stringde[index]) {
     case '1':
-      wordde.push(key = wordd['1']);
+      wordde.push(stringde[index] = wordd['1']);
       break;
 
     case '2':
-      wordde.push(key = wordd['2']);
+      wordde.push(stringde[index] = wordd['2']);
       break;
 
     case '3':
-      wordde.push(key = wordd['3']);
+      wordde.push(stringde[index] = wordd['3']);
       break;
 
     case '4':
-      wordde.push(key = wordd['4']);
+      wordde.push(stringde[index] = wordd['4']);
       break;
 
     case '5':
-      wordde.push(key = wordd['5']);
+      wordde.push(stringde[index] = wordd['5']);
       break;
 
     default:
-      wordde.push(key);
+      wordde.push(stringde[index]);
     }
   }
 
