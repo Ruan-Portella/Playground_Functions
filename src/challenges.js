@@ -31,7 +31,18 @@ function highestCount(highest) {
 }
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
+let calcTriangleArea = (base, height) => (base * height) / 2;
+let calcRectangleArea = (base, height) => (base * height);
 
+function calcAllAreas(base, height, form) {
+  if (form === 'triângulo') {
+    console.log('O valor da área do triângulo é de: ' + calcTriangleArea);
+  } else if (form === 'retângulo'){
+    console.log('O valor da área do retângulo é de: ' + calcRectangleArea);
+  } else {
+    console.log('Não foi possível fazer o cálculo, insira uma forma geométrica válida.');
+  }
+}
 // Desafio 7 - Crie a função catAndMouse
 
 // Desafio 8 - Crie a função fizzBuzz
