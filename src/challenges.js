@@ -2,7 +2,6 @@
 const compareTrue = (number1, number2) => number1 === true && number2 === true;
 // Desafio 2 - Crie a função splitSentence
 function splitSentence(name) { return name.split(' '); }
-console.log(splitSentence('foguete'));
 // Desafio 3 - Crie a função concatName
 const concatName = (word) => word[word.length -1] + `, ` + word[0];
 // Desafio 4 - Crie a função footballPoints
@@ -56,20 +55,20 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8 - Crie a função fizzBuzz
 
-function fizzBuzz(numbers){
-  let string = [];
-  for (let number of numbers) {
-    if (number % 3 === 0 && number % 5 === 0) {
-      string.push('fizzBuzz');
-    } else if (number % 5 === 0) {
-      string.push('buzz');
-    } else if (number % 3 === 0) {
-      string.push('fizz');
-    } else {
-      string.push('bug!');
+function fizzBuzz(numbers) {
+    let string = [];
+    for (let index = 0; index < numbers.length; index += 1){
+      if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
+        string.push('fizzBuzz');
+      } else if (numbers[index] % 5 === 0) {
+        string.push('buzz');
+      } else if (numbers[index] % 3 === 0) {
+        string.push('fizz');
+      } else {
+        string.push('bug!');
+      }
     }
-  }
-  return string;
+    return string;
 }
 
 // Desafio 9 - Crie a função encode e a função decode
