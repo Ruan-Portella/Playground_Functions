@@ -56,7 +56,6 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8 - Crie a função fizzBuzz
 
 const fizzBuzz = (numbers) => {
-  let string = [];
   for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
       string.push('fizzBuzz');
@@ -75,11 +74,11 @@ const fizzBuzz = (numbers) => {
 function encode(string) {
   let wordFull = [];
   const word = {
-    'a': 1,
-    'e': 2,
-    'i': 3,
-    'o': 4,
-    'u': 5,
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
   };
   for (index = 0; index < string.length; index += 1) {
     switch (string[index]) {
@@ -141,6 +140,19 @@ function decode(stringde) {
 }
 // Desafio 10 - Crie a função techList
 
+function techList(tech, name) {
+ let array = [];
+ tech.sort();
+    for (index = 0; index < 5; index += 1) {
+      if (tech.length > 0) {
+        array.push({
+          tech: tech[index],
+          name: name,
+        }); 
+      }
+    }
+  return array;
+}
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
