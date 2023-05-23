@@ -60,7 +60,7 @@ const fizzBuzz = (numbers) => {
     if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0) {
       string.push('fizzBuzz');
     } else if (numbers[index] % 5 === 0) {
-      string.push('buzz');
+string.push('buzz');
     } else if (numbers[index] % 3 === 0) {
       string.push('fizz');
     } else {
@@ -141,16 +141,16 @@ function decode(stringde) {
 // Desafio 10 - Crie a função techList
 
 function techList(tech, name) {
- let array = [];
- tech.sort();
-    for (index = 0; index < 5; index += 1) {
-      if (tech.length > 0) {
-        array.push({
-          tech: tech[index],
-          name: name,
-        }); 
-      }
+  let array = [];
+  tech.sort();
+  for (index = 0; index < 5; index += 1) {
+    if (tech.length > 0) {
+      array.push({
+        tech: tech[index],
+        name,
+      });
     }
+  }
   return array;
 }
 // Não modifique essas linhas
