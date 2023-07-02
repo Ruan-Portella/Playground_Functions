@@ -1,4 +1,4 @@
-# :sparkles: Trybewarts :sparkles:
+# :sparkles: Playground Functions :sparkles:
 
 ## Sobre 
 
@@ -17,7 +17,7 @@ Para executar, é necessário que você tenha instalado na sua máquina, o **Vs 
 ### 1 - Clone o repositório e entre na pasta da aplicação
 
 ```sh
-git clone git@github.com:Ruan-Portella/trybewarts.git && cd trybewarts
+git clone git@github.com:Ruan-Portella/trybewarts.git && cd Playground_Functions
 ```
 ## :trophy: Grade/Nota
 
